@@ -1,3 +1,4 @@
+
 :root {
     --text-color:#10016d;
     --link-color:#5e78ba;
@@ -54,3 +55,64 @@ nav .right a:last-child{
     padding: 8px 12px;
     border-radius: 5px;
 }
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+/*Section 1: Hero*/
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+    gap: 2px;
+}
+
+.hero-section .logo {
+    flex: 2; 
+    display: flex;
+    justify-content: center; /* centers the image horizontally */
+    align-items: center; 
+}
+
+.hero-section .logo img{
+    width: 500px;
+    border-radius: 50%;
+}
+
+.hero-section .text {
+    max-width: 800px;            /* optional, keeps text nicely contained */
+}
+
+.hero-section .text h2 {
+    font-size: 45px;             /* fixed: should be font-size not font-style */
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px){
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+    
+    nav .right a span {
+        display: none;
+    }
+
+}
+
+
